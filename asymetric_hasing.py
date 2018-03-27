@@ -1,3 +1,20 @@
+
+from sklearn.cluster import KMeans
+import numpy as np
+import math
+
+
+# base class to contain static data for testing
+class Data:
+# generate a training dataset
+nrows = 10000
+ncols = 100
+X = np.random.random((nrows, ncols))
+# generate a testing target
+target = np.random.random(ncols)
+# number of nearest neighbors to return
+top_k = 3
+
 # asymmetric hashing
 class AH:
 
